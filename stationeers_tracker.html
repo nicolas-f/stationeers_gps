@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Stationeers GPS Tracker</title>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<div class="col-md-8 order-md-1">
+    <h4 class="mb-3">Stationeers GPS Tracker</h4>
+    <form class="needs-validation" novalidate="" action="javascript:void(0);" OnSubmit = "return Submit()">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="bx">Track X</label>
+                <input type="text" class="form-control" id="bx" placeholder="0" value="0" required="">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="bz">Track Z</label>
+                <input type="text" class="form-control" id="bz" placeholder="0" value="0" required="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="tx">GPS X</label>
+                <input type="text" class="form-control" id="tx" placeholder="100" value="100" required="">
+                <span class="help-block">Handheld Tablet X data</span>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="tz">GPS Z</label>
+                <input type="text" class="form-control" id="tz" placeholder="-100" value="-100" required="">
+                <span class="help-block">Handheld Tablet Z data</span>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="tx">Orientation</label>
+                <input type="text" class="form-control" id="angle" placeholder="" value="" required="" readonly>
+                <span class="help-block">Walk to this angle</span>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="tz">Distance</label>
+                <input type="text" class="form-control" id="distance" placeholder="" value="" required="" readonly>
+                <span class="help-block">For this distance</span>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Get Track angle</button>
+    </form>
+</div>
+
+</body>
+</html>
